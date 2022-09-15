@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Nav.css";
 
 function Nav() {
@@ -18,7 +18,7 @@ function Nav() {
  }, []);
 
   return (
-    <div className="nav nav__black">
+    <div className={'nav ${show && "nav__black"}'}>
      <div className="nav__contents">
        <img 
          className="nav__logo"
