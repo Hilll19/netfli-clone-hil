@@ -1,13 +1,17 @@
 import React from "react";
 import "./HomeScreen.css";
+import Nav from "./Nav";
 
 function HomeScreen() {
-  return <div Classname="homeScreen">
-        {/* Nav */}
+  return (
+    <div className="homeScreen">
+        <Nav />
+
         {/* Banner */}
+
         {/* Row */}
-  </div>;
-  
+    </div>
+  );
 }
 
-export default HomeScreen
+export default HomeScreen;
