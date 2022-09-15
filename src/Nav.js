@@ -2,16 +2,21 @@ import React, { useEffect, useState } from "react";
 import "./Nav.css";
 
 function Nav() {
-const [show, handleShow] = useState(false);
+  const [show, handleShow] = useState(false);
 
-const transitionNavBar = () ==> {
-    if (window.scrolly > 100) {
-      handleShow(true);
-    }else {
-      handleShow(false);
-    }
-}
-useEffect
+  const transitionNavBar = () => {
+     if (window.scrolly > 100) {
+       handleShow(true);
+     }else {
+       handleShow(false);
+     }
+ };
+
+ useEffect (() => {
+   window.addEventListener("scroll", transitionNavBar);
+   return () => window.removeEventListener("scroll", transitionNavBar);
+ }, []);
+
   return (
     <div className="nav nav__black">
      <div className="nav__contents">
