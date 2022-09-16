@@ -19,7 +19,7 @@ function Banner() {
             </div>
             <h1 className="banner__description">This is a test description</h1>
         </div>
-        <div className="banner--declaration" />
+        <div className="banner--fadeBotton" />
     </header>
   );
 }
